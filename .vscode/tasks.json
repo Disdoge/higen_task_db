@@ -1,0 +1,38 @@
+{
+  "version": "2.0.0",
+  "inputs": [
+    {
+      "id": "projectName",
+      "type": "promptString",
+      "description": "New Python project name, for example: guess_number"
+    },
+    {
+      "id": "commitMessage",
+      "type": "promptString",
+      "description": "Git commit message",
+      "default": "Update Python projects"
+    }
+  ],
+  "tasks": [
+    {
+      "label": "New Python Project",
+      "type": "shell",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "args": [
+        "${workspaceFolder}/scripts/new_project.py",
+        "${input:projectName}"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Save and Push",
+      "type": "shell",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "args": [
+        "${workspaceFolder}/scripts/save_and_push.py",
+        "${input:commitMessage}"
+      ],
+      "problemMatcher": []
+    }
+  ]
+}
