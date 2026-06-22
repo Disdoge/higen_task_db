@@ -6,128 +6,222 @@
     <title>何海军 - 测试开发工程师作品集</title>
     <meta
       name="description"
-      content="何海军的测试开发工程师个人主页，展示 Python 练习项目、测试开发技能和 GitHub 作品集。"
+      content="何海军的测试开发工程师个人主页，包含个人简介、研究方向、Python 项目、测试开发作品集和钢琴音乐展示。"
     >
     <link rel="stylesheet" href="assets/styles.css">
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="index.html">何海军</a>
-      <nav class="nav" aria-label="主导航">
-        <a href="#profile">简介</a>
-        <a href="#skills">技能</a>
-        <a href="#projects">项目</a>
-        <a href="#contact">联系</a>
-      </nav>
-    </header>
-
-    <main>
-      <section class="hero">
-        <img class="hero-image" src="assets/hero-workspace.png" alt="代码编辑器、测试报告和自动化流程组成的工作台视觉图">
-        <div class="hero-content">
-          <p class="eyebrow">Python Practice Portfolio</p>
+    <main class="page-shell">
+      <aside class="profile-rail" aria-label="个人信息">
+        <div class="profile-card">
+          <figure class="photo-frame">
+            <img src="assets/profile-photo.jpg" alt="何海军个人照片">
+          </figure>
+          <p class="role-label">Test Development Engineer</p>
           <h1>何海军</h1>
-          <p class="headline">面向测试开发工程师方向，持续沉淀 Python、接口测试、自动化测试和质量保障项目。</p>
-          <div class="hero-actions">
-            <a class="primary-action" href="https://github.com/Disdoge/higen_task_db">查看 GitHub</a>
-            <a class="secondary-action" href="#projects">浏览项目</a>
+          <p class="position">测试开发工程师方向</p>
+
+          <div class="status-block">
+            <span class="status-dot"></span>
+            <span>持续更新 Python / Pytest / 接口测试作品集</span>
           </div>
-        </div>
-      </section>
 
-      <section id="profile" class="section intro-grid">
-        <div>
-          <p class="section-kicker">Profile</p>
-          <h2>从测试实习到测试开发练习</h2>
-        </div>
-        <div class="intro-copy">
-          <p>
-            我毕业于北京化工大学数据科学与大数据技术专业，目标岗位为测试开发工程师。曾在九号公司商用机器人事业部参与
-            Web 管理后台、Android 应用、小程序端业务和机器人相关测试工作。
-          </p>
-          <p>
-            当前作品集用于记录 Python 小程序、接口测试、自动化测试、日志分析等练习项目。每个项目都会逐步补充代码、运行方式和学习总结。
-          </p>
-        </div>
-      </section>
+          <dl class="profile-list">
+            <div>
+              <dt>教育背景</dt>
+              <dd>北京化工大学 · 数据科学与大数据技术</dd>
+            </div>
+            <div>
+              <dt>目标岗位</dt>
+              <dd>测试开发 / 软件测试 / QA Automation</dd>
+            </div>
+            <div>
+              <dt>邮箱</dt>
+              <dd><a href="mailto:hey.hy@foxmail.com">hey.hy@foxmail.com</a></dd>
+            </div>
+            <div>
+              <dt>GitHub</dt>
+              <dd><a href="https://github.com/Disdoge">github.com/Disdoge</a></dd>
+            </div>
+          </dl>
 
-      <section id="skills" class="section">
-        <div class="section-heading">
-          <p class="section-kicker">Skills</p>
-          <h2>技能方向</h2>
-        </div>
-        <div class="skill-grid">
-          <article class="skill-item">
-            <h3>Python 编程</h3>
-            <p>用小程序练习变量、函数、文件处理、异常处理和模块化组织。</p>
-          </article>
-          <article class="skill-item">
-            <h3>接口测试</h3>
-            <p>围绕请求构造、响应校验、测试数据和报告输出做项目化练习。</p>
-          </article>
-          <article class="skill-item">
-            <h3>测试工具</h3>
-            <p>持续练习 Pytest、Postman、Charles 等测试开发相关工具链。</p>
-          </article>
-          <article class="skill-item">
-            <h3>质量意识</h3>
-            <p>从需求理解、用例设计、Bug 定位、回归测试和测试报告中积累方法。</p>
-          </article>
-        </div>
-      </section>
+          <div class="tag-group" aria-label="关键词">
+            <span>Python</span>
+            <span>Pytest</span>
+            <span>Postman</span>
+            <span>Charles</span>
+            <span>API Testing</span>
+            <span>Robot QA</span>
+          </div>
 
-      <section id="projects" class="section">
-        <div class="section-heading">
-          <p class="section-kicker">Projects</p>
-          <h2>项目入口</h2>
+          <nav class="side-nav" aria-label="页面导航">
+            <a href="#about">个人简介</a>
+            <a href="#direction">研究方向</a>
+            <a href="#projects">项目经历</a>
+            <a href="#music">钢琴音乐</a>
+          </nav>
         </div>
-        <div class="project-list">
-          <article class="project-row">
-            <div>
-              <h3>01 Calculator</h3>
-              <p>Python 基础练习项目，包含输入、数字转换和基础计算。</p>
-            </div>
-            <a href="https://github.com/Disdoge/higen_task_db/tree/main/01_calculator">GitHub</a>
-          </article>
-          <article class="project-row">
-            <div>
-              <h3>04 Pytest API Demo</h3>
-              <p>接口测试样例项目，后续可扩展为真实接口请求、断言和测试报告。</p>
-            </div>
-            <a href="https://github.com/Disdoge/higen_task_db/tree/main/04_pytest_api_demo">GitHub</a>
-          </article>
-          <article class="project-row">
-            <div>
-              <h3>05 Bug Report Analyzer</h3>
-              <p>日志和 Bug 文本分析样例项目，适合练习文件读取、统计和结果输出。</p>
-            </div>
-            <a href="https://github.com/Disdoge/higen_task_db/tree/main/05_bug_report_analyzer">GitHub</a>
-          </article>
-          <article class="project-row">
-            <div>
-              <h3>06 CLI Todo App</h3>
-              <p>命令行待办工具样例项目，练习增删改查、JSON 存储和命令参数。</p>
-            </div>
-            <a href="https://github.com/Disdoge/higen_task_db/tree/main/06_cli_todo_app">GitHub</a>
-          </article>
-          <article class="project-row">
-            <div>
-              <h3>07 Portfolio Site Sample</h3>
-              <p>个人主页维护样例项目，用于记录网页迭代和作品集说明。</p>
-            </div>
-            <a href="https://github.com/Disdoge/higen_task_db/tree/main/07_portfolio_site_sample">GitHub</a>
-          </article>
-        </div>
-      </section>
+      </aside>
 
-      <section id="contact" class="section contact-band">
-        <div>
-          <p class="section-kicker">Contact</p>
-          <h2>持续更新中的测试开发作品集</h2>
-        </div>
-        <div class="contact-links">
-          <a href="mailto:hey.hy@foxmail.com">hey.hy@foxmail.com</a>
-          <a href="https://github.com/Disdoge">GitHub: Disdoge</a>
+      <section class="content-area">
+        <section class="top-panel" aria-label="主页概览">
+          <div class="top-copy">
+            <p class="eyebrow">Portfolio / Resume / Practice Lab</p>
+            <h2>把测试经验、Python 练习和个人表达沉淀成可访问的在线作品集。</h2>
+            <p>
+              这个主页面向导师、HR 和业务主管展示：我具备测试项目经验，正在系统补齐测试开发能力，并用持续更新的 GitHub 项目证明学习节奏和交付习惯。
+            </p>
+          </div>
+          <div class="top-metrics" aria-label="作品集概览数据">
+            <div>
+              <strong>5+</strong>
+              <span>项目入口</span>
+            </div>
+            <div>
+              <strong>4</strong>
+              <span>能力方向</span>
+            </div>
+            <div>
+              <strong>1</strong>
+              <span>在线主页</span>
+            </div>
+          </div>
+        </section>
+
+        <div class="content-grid">
+          <section id="about" class="panel span-7">
+            <div class="section-title">
+              <p>About</p>
+              <h2>个人简介</h2>
+            </div>
+            <p>
+              我毕业于北京化工大学数据科学与大数据技术专业，具备计算机、数据科学和人工智能相关基础。实习期间在九号公司商用机器人事业部参与多端测试工作，覆盖 Web 管理后台、Android 应用、小程序业务功能、机器人导航和定制化需求验证。
+            </p>
+            <p>
+              我喜欢把测试工作拆解成清晰的流程：理解需求、设计用例、搭建环境、定位问题、跟进回归、沉淀报告。现在正在用 Python 小项目训练代码能力，把测试经验逐步升级为测试开发能力。
+            </p>
+          </section>
+
+          <section class="panel span-5">
+            <div class="section-title">
+              <p>Snapshot</p>
+              <h2>简历要点</h2>
+            </div>
+            <ul class="clean-list">
+              <li>九号公司商用机器人事业部测试实习经历</li>
+              <li>参与机器人云端链路、本地 UI、订单渠道和业务兼容性测试</li>
+              <li>熟悉需求评审、测试用例、Bug 定位、测试报告和回归流程</li>
+              <li>CET-6，具备英文文档阅读和工具学习能力</li>
+            </ul>
+          </section>
+
+          <section id="direction" class="panel span-12">
+            <div class="section-title">
+              <p>Direction</p>
+              <h2>研究与成长方向</h2>
+            </div>
+            <div class="direction-grid">
+              <article>
+                <h3>接口测试工程化</h3>
+                <p>练习接口请求封装、响应断言、测试数据管理和报告输出，让测试用例可以稳定复用。</p>
+              </article>
+              <article>
+                <h3>自动化测试实践</h3>
+                <p>围绕 Pytest、命令行工具和脚本任务，逐步形成可维护的自动化测试项目结构。</p>
+              </article>
+              <article>
+                <h3>质量数据分析</h3>
+                <p>通过日志、Bug 文本和测试结果统计，练习从问题现象中提取质量线索。</p>
+              </article>
+              <article>
+                <h3>产品化测试思维</h3>
+                <p>结合用户场景、业务链路和发版效率，持续提升需求理解和跨职能沟通能力。</p>
+              </article>
+            </div>
+          </section>
+
+          <section id="projects" class="panel span-12">
+            <div class="section-title">
+              <p>Projects</p>
+              <h2>项目经历与作品入口</h2>
+            </div>
+            <div class="project-stack">
+              <article class="project-item">
+                <div class="project-head">
+                  <h3>Pytest API Demo</h3>
+                  <a href="https://github.com/Disdoge/higen_task_db/tree/main/04_pytest_api_demo">GitHub</a>
+                </div>
+                <p>接口测试样例项目，后续用于练习请求构造、状态码校验、字段断言、测试数据组织和测试报告。</p>
+                <ul>
+                  <li>个人实现目标：把接口测试从“手动点工具”升级为“代码可重复执行”。</li>
+                  <li>预期成果：形成一套清晰的 Pytest 项目模板，便于后续接入真实接口。</li>
+                </ul>
+              </article>
+
+              <article class="project-item">
+                <div class="project-head">
+                  <h3>Bug Report Analyzer</h3>
+                  <a href="https://github.com/Disdoge/higen_task_db/tree/main/05_bug_report_analyzer">GitHub</a>
+                </div>
+                <p>Bug 文本与日志分析样例项目，适合练习文件读取、关键词统计、严重程度分类和结果输出。</p>
+                <ul>
+                  <li>个人实现目标：把测试过程中零散的问题记录转化为可分析的数据。</li>
+                  <li>预期成果：输出高频问题、模块分布和回归优先级建议。</li>
+                </ul>
+              </article>
+
+              <article class="project-item">
+                <div class="project-head">
+                  <h3>CLI Todo App</h3>
+                  <a href="https://github.com/Disdoge/higen_task_db/tree/main/06_cli_todo_app">GitHub</a>
+                </div>
+                <p>命令行待办事项工具，用来练习 Python 基础、JSON 存储、命令参数和项目结构。</p>
+                <ul>
+                  <li>个人实现目标：掌握小工具从输入、处理到保存的完整闭环。</li>
+                  <li>预期成果：做成可日常使用的学习任务管理脚本。</li>
+                </ul>
+              </article>
+
+              <article class="project-item">
+                <div class="project-head">
+                  <h3>Calculator & Practice Projects</h3>
+                  <a href="https://github.com/Disdoge/higen_task_db/tree/main/01_calculator">GitHub</a>
+                </div>
+                <p>Python 基础练习集合，记录变量、函数、输入输出、异常处理和简单业务逻辑。</p>
+                <ul>
+                  <li>个人实现目标：用小项目把基础语法练熟，逐步过渡到测试开发脚本。</li>
+                  <li>预期成果：每个练习项目都有 README、运行方式和 GitHub 提交记录。</li>
+                </ul>
+              </article>
+            </div>
+          </section>
+
+          <section id="music" class="panel span-12 music-panel">
+            <div class="section-title">
+              <p>Music</p>
+              <h2>钢琴与音乐作品 Demo</h2>
+            </div>
+            <div class="music-layout">
+              <div>
+                <p>
+                  音乐是我保持稳定状态和表达力的方式。这里先放一个展示 Demo，后续可以上传钢琴练习片段、翻奏作品、练琴记录或作品说明，让主页除了技术能力，也能看到更完整的人。
+                </p>
+                <div class="music-actions">
+                  <a href="https://github.com/Disdoge/higen_task_db/tree/main/08_piano_music_showcase">查看音乐 Demo 项目</a>
+                  <a href="mailto:hey.hy@foxmail.com">联系我</a>
+                </div>
+              </div>
+              <div class="music-demo" aria-label="音乐作品展示占位">
+                <div class="piano-keys" aria-hidden="true">
+                  <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                </div>
+                <div>
+                  <strong>Demo Track 01</strong>
+                  <span>钢琴练习作品 · Coming Soon</span>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
       </section>
     </main>
